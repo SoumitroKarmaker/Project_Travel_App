@@ -36,22 +36,24 @@ class _BottomNavigationState extends State<BottomNavigation> {
         child: bottomPage.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.yellowAccent,
+        selectedItemColor: ColorSelect.primary,
+        unselectedItemColor: ColorSelect.subTitle,
+        backgroundColor: Colors.yellow,
         elevation: 0.0,
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
         items: [
           BottomNavigationBarItem(
-              icon: Icon(IconlyLight.home, color: ColorSelect.primary),
+              icon: Icon(IconlyLight.home,),
               label: ''),
           BottomNavigationBarItem(
-              icon: Icon(IconlyLight.discovery, color: ColorSelect.primary),
+              icon: Icon(IconlyLight.discovery, ),
               label: ''),
           BottomNavigationBarItem(
-              icon: Icon(IconlyLight.notification, color: ColorSelect.primary),
+              icon: Icon(IconlyLight.notification, ),
               label: ''),
           BottomNavigationBarItem(
-              icon: Icon(IconlyLight.category, color: ColorSelect.primary),
+              icon: Icon(IconlyLight.category, ),
               label: ''),
         ],
       ),

@@ -10,15 +10,37 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
+  List<String> countryName = [
+    'Bangladesh',
+    'India',
+    'Pakistan',
+    'Nepal',
+    'France',
+    'Uk',
+    'Canada',
+    'Us',
+    'Russia'
+  ];
+  List<String> imagesUrl = [
+    'assects/country/bangladesh.jpg',
+    'assects/country/India.jpg',
+    'assects/country/Pakistan.jpg',
+    'assects/country/Nepal.jpg',
+    'assects/country/France.jpg',
+    'assects/country/Uk.jpg',
+    'assects/country/Canada.jpg',
+    'assects/country/Us.jpg',
+    'assects/country/Russia.jpg',
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFF6F7F7),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // upper main container
+          //upper main container
           Container(
             color: ColorSelect.secondery,
             height: MediaQuery.of(context).size.height / 2.5,
@@ -42,7 +64,9 @@ class _HomeState extends State<Home> {
                                 'Hei, Soumitro Karmaker',
                                 style: TextStyle(color: ColorSelect.subTitle),
                               ),
-                              SizedBox(height: 7,),
+                              SizedBox(
+                                height: 7,
+                              ),
                               Text(
                                 'Discover your destination for Holiday',
                                 style: TextStyle(
@@ -57,10 +81,10 @@ class _HomeState extends State<Home> {
                             child: Container(
                                 width: 30,
                                 decoration: BoxDecoration(
-                                  color: Color(0xFFFF8A48),
-                                  borderRadius: BorderRadius.circular(10),
-                                  border: Border.all(color: Colors.white, width: 4)
-                                ),
+                                    color: Color(0xFFFF8A48),
+                                    borderRadius: BorderRadius.circular(10),
+                                    border: Border.all(
+                                        color: Colors.white, width: 4)),
                                 child:
                                     Image.asset('assects/images/profile.png'))),
                       ],
@@ -78,24 +102,137 @@ class _HomeState extends State<Home> {
                       enabledBorder: UnderlineInputBorder(
                         borderRadius: BorderRadius.circular(15.0),
                       ),
-                      suffixIcon: Icon(IconlyLight.search, color: ColorSelect.primary,),
+                      suffixIcon: Icon(
+                        IconlyLight.search,
+                        color: ColorSelect.primary,
+                      ),
                     ),
                   ),
                 ),
               ],
             ),
           ),
-          
+          //Catagories
           Padding(
             padding: const EdgeInsets.all(20.0),
-            child: Text('Categories',style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Categories',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+                Row(
+                  children: [
+                    Text(
+                      'see all',
+                      style: TextStyle(color: ColorSelect.subTitle),
+                    ),
+                    Icon(
+                      Icons.arrow_forward_ios,
+                      color: ColorSelect.subTitle,
+                      size: 12,
+                    ),
+                  ],
+                ),
+              ],
+            ),
           ),
-          
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: Container(
+              height: 80,
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: countryName.length,
+                  itemBuilder: (context, index) {
+                    return Padding(
+                      padding: EdgeInsets.all(8.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(15),
+                          color: Colors.white,
+                        ),
+                        child: Row(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(10.0),
+                              child: Container(
+                                height: 60,
+                                width: 50,
+                                decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                      image: AssetImage(imagesUrl[index]),
+                                      fit: BoxFit.cover),
+                                  borderRadius: BorderRadius.circular(10),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 8.0),
+                              child: Text(
+                                countryName[index],
+                                style: TextStyle(
+                                    fontSize: 15, fontWeight: FontWeight.bold),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    );
+                  }),
+            ),
+          ),
+          //Tab bar
+          DefaultTabController(
+              length: 2, // length of tabs
+              initialIndex: 0,
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Align(
+                      alignment: Alignment.topLeft,
+                      child: Container(
+                        child: TabBar(
+                          labelPadding: EdgeInsets.only(left: 20),
+                          isScrollable: true,
+                          labelColor: ColorSelect.secondery,
+                          unselectedLabelColor: ColorSelect.subTitle,
+                          tabs: [
+                            Tab(text: 'Upcoming',),
+                            Tab(text: 'Recent'),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Container(
+                        height: 40, //height of TabBarView
+                        decoration: BoxDecoration(
+                            border: Border(
+                                top: BorderSide(
+                                    color: Colors.grey, width: 0.5))),
+                        child: TabBarView(children: <Widget>[
+                          Container(
+                            color: Colors.yellowAccent,
+                            child: Center(
+                              child: Text('Display Tab 1',
+                                  style: TextStyle(
+                                      fontSize: 22,
+                                      fontWeight: FontWeight.bold)),
+                            ),
+                          ),
+                          Container(
+                            child: Center(
+                              child: Text('Display Tab 2',
+                                  style: TextStyle(
+                                      fontSize: 22,
+                                      fontWeight: FontWeight.bold)),
+                            ),
+                          ),
+                        ]))
+                  ])),
         ],
       ),
-
-
     );
-
   }
 }
