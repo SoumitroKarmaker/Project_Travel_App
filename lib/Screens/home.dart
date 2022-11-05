@@ -270,23 +270,76 @@ class _HomeState extends State<Home> {
                                                 crossAxisAlignment:
                                                     CrossAxisAlignment.start,
                                                 children: [
-                                                  Container(
-                                                    height: 160,
-                                                    width: 150,
-                                                    decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(15),
-                                                      image: DecorationImage(
-                                                        fit: BoxFit.cover,
-                                                        image: AssetImage(
-                                                            'assects/country/Chittagong.jpg'),
+                                                  Stack(
+                                                    alignment:
+                                                        Alignment.topRight,
+                                                    children: [
+                                                      Container(
+                                                        height: 160,
+                                                        width: 150,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(15),
+                                                          image:
+                                                              DecorationImage(
+                                                            fit: BoxFit.cover,
+                                                            image: AssetImage(
+                                                                'assects/country/Chittagong.jpg'),
+                                                          ),
+                                                        ),
                                                       ),
-                                                    ),
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                    .only(
+                                                                right: 8.0,
+                                                                top: 8.0),
+                                                        child: Positioned(
+                                                            child: Container(
+                                                          height: 30,
+                                                          width: 55,
+                                                          decoration: BoxDecoration(
+                                                              color: Color(
+                                                                      0xFFC0C7FF)
+                                                                  .withOpacity(
+                                                                      0.6),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          20)),
+                                                          child: Row(
+                                                            children: [
+                                                              Padding(
+                                                                padding:
+                                                                    const EdgeInsets
+                                                                            .all(
+                                                                        4.0),
+                                                                child: Icon(
+                                                                  Icons.star,
+                                                                  color: Colors
+                                                                      .white,
+                                                                ),
+                                                              ),
+                                                              Text(
+                                                                '4.5',
+                                                                style: TextStyle(
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .bold,
+                                                                    color: Colors
+                                                                        .white),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        )),
+                                                      ),
+                                                    ],
                                                   ),
                                                   Padding(
-                                                    padding:
-                                                         EdgeInsets.only(
-                                                            top: 8.0, left: 5),
+                                                    padding: EdgeInsets.only(
+                                                        top: 8.0, left: 5),
                                                     child: Text(
                                                       'Chittagong',
                                                       style: TextStyle(
@@ -295,20 +348,26 @@ class _HomeState extends State<Home> {
                                                               FontWeight.bold),
                                                     ),
                                                   ),
-                                                  SizedBox(height: 10,),
+                                                  SizedBox(
+                                                    height: 10,
+                                                  ),
                                                   Padding(
-                                                    padding: const EdgeInsets.only(left: 5.0),
+                                                    padding:
+                                                        const EdgeInsets.only(
+                                                            left: 5.0),
                                                     child: Row(
                                                       children: [
                                                         Text('Bangladesh',
                                                             style: TextStyle(
-                                                              color: ColorSelect.subTitle,
+                                                              color: ColorSelect
+                                                                  .subTitle,
                                                               fontSize: 15,
                                                             )),
                                                         Spacer(),
                                                         Text('\$250',
                                                             style: TextStyle(
-                                                              color: ColorSelect.primary,
+                                                              color: ColorSelect
+                                                                  .primary,
                                                               fontSize: 25,
                                                             )),
                                                       ],
@@ -328,7 +387,7 @@ class _HomeState extends State<Home> {
                                             width: 165,
                                             decoration: BoxDecoration(
                                               borderRadius:
-                                              BorderRadius.circular(15),
+                                                  BorderRadius.circular(15),
                                               color: Colors.white,
                                               boxShadow: [
                                                 BoxShadow(
@@ -343,51 +402,110 @@ class _HomeState extends State<Home> {
                                             ),
                                             child: Padding(
                                               padding:
-                                              const EdgeInsets.all(8.0),
+                                                  const EdgeInsets.all(8.0),
                                               //image container
                                               child: Column(
                                                 crossAxisAlignment:
-                                                CrossAxisAlignment.start,
+                                                    CrossAxisAlignment.start,
                                                 children: [
-                                                  Container(
-                                                    height: 160,
-                                                    width: 150,
-                                                    decoration: BoxDecoration(
-                                                      borderRadius:
-                                                      BorderRadius.circular(15),
-                                                      image: DecorationImage(
-                                                        fit: BoxFit.cover,
-                                                        image: AssetImage(
-                                                            'assects/country/Cox.jpg'),
+                                                  Stack(
+                                                    alignment:
+                                                        Alignment.topRight,
+                                                    children: [
+                                                      Container(
+                                                        height: 160,
+                                                        width: 150,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(15),
+                                                          image:
+                                                              DecorationImage(
+                                                            fit: BoxFit.cover,
+                                                            image: AssetImage(
+                                                                'assects/country/Cox.jpg'),
+                                                          ),
+                                                        ),
                                                       ),
-                                                    ),
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                    .only(
+                                                                right: 8.0,
+                                                                top: 8.0),
+                                                        child: Positioned(
+                                                            child: Container(
+                                                          height: 30,
+                                                          width: 55,
+                                                          decoration: BoxDecoration(
+                                                              color: Color(
+                                                                      0xFFC0C7FF)
+                                                                  .withOpacity(
+                                                                      0.6),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          20)),
+                                                          child: Row(
+                                                            children: [
+                                                              Padding(
+                                                                padding:
+                                                                    const EdgeInsets
+                                                                            .all(
+                                                                        4.0),
+                                                                child: Icon(
+                                                                  Icons.star,
+                                                                  color: Colors
+                                                                      .white,
+                                                                ),
+                                                              ),
+                                                              Text(
+                                                                '4.5',
+                                                                style: TextStyle(
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .bold,
+                                                                    color: Colors
+                                                                        .white),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        )),
+                                                      ),
+                                                    ],
                                                   ),
                                                   Padding(
-                                                    padding:
-                                                    EdgeInsets.only(
+                                                    padding: EdgeInsets.only(
                                                         top: 8.0, left: 5),
                                                     child: Text(
                                                       'Cox\'s Bazar',
                                                       style: TextStyle(
                                                           fontSize: 20,
                                                           fontWeight:
-                                                          FontWeight.bold),
+                                                              FontWeight.bold),
                                                     ),
                                                   ),
-                                                  SizedBox(height: 10,),
+                                                  SizedBox(
+                                                    height: 10,
+                                                  ),
                                                   Padding(
-                                                    padding: const EdgeInsets.only(left: 5.0),
+                                                    padding:
+                                                        const EdgeInsets.only(
+                                                            left: 5.0),
                                                     child: Row(
                                                       children: [
                                                         Text('Bangladesh',
                                                             style: TextStyle(
-                                                              color: ColorSelect.subTitle,
+                                                              color: ColorSelect
+                                                                  .subTitle,
                                                               fontSize: 15,
                                                             )),
                                                         Spacer(),
                                                         Text('\$300',
                                                             style: TextStyle(
-                                                              color: ColorSelect.primary,
+                                                              color: ColorSelect
+                                                                  .primary,
                                                               fontSize: 25,
                                                             )),
                                                       ],
@@ -407,7 +525,7 @@ class _HomeState extends State<Home> {
                                             width: 165,
                                             decoration: BoxDecoration(
                                               borderRadius:
-                                              BorderRadius.circular(15),
+                                                  BorderRadius.circular(15),
                                               color: Colors.white,
                                               boxShadow: [
                                                 BoxShadow(
@@ -422,51 +540,110 @@ class _HomeState extends State<Home> {
                                             ),
                                             child: Padding(
                                               padding:
-                                              const EdgeInsets.all(8.0),
+                                                  const EdgeInsets.all(8.0),
                                               //image container
                                               child: Column(
                                                 crossAxisAlignment:
-                                                CrossAxisAlignment.start,
+                                                    CrossAxisAlignment.start,
                                                 children: [
-                                                  Container(
-                                                    height: 160,
-                                                    width: 150,
-                                                    decoration: BoxDecoration(
-                                                      borderRadius:
-                                                      BorderRadius.circular(15),
-                                                      image: DecorationImage(
-                                                        fit: BoxFit.cover,
-                                                        image: AssetImage(
-                                                            'assects/country/Sylhet.jpg'),
+                                                  Stack(
+                                                    alignment:
+                                                        Alignment.topRight,
+                                                    children: [
+                                                      Container(
+                                                        height: 160,
+                                                        width: 150,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(15),
+                                                          image:
+                                                              DecorationImage(
+                                                            fit: BoxFit.cover,
+                                                            image: AssetImage(
+                                                                'assects/country/Sylhet.jpg'),
+                                                          ),
+                                                        ),
                                                       ),
-                                                    ),
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                    .only(
+                                                                right: 8.0,
+                                                                top: 8.0),
+                                                        child: Positioned(
+                                                            child: Container(
+                                                          height: 30,
+                                                          width: 55,
+                                                          decoration: BoxDecoration(
+                                                              color: Color(
+                                                                      0xFFC0C7FF)
+                                                                  .withOpacity(
+                                                                      0.6),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          20)),
+                                                          child: Row(
+                                                            children: [
+                                                              Padding(
+                                                                padding:
+                                                                    const EdgeInsets
+                                                                            .all(
+                                                                        4.0),
+                                                                child: Icon(
+                                                                  Icons.star,
+                                                                  color: Colors
+                                                                      .white,
+                                                                ),
+                                                              ),
+                                                              Text(
+                                                                '4.5',
+                                                                style: TextStyle(
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .bold,
+                                                                    color: Colors
+                                                                        .white),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        )),
+                                                      ),
+                                                    ],
                                                   ),
                                                   Padding(
-                                                    padding:
-                                                    EdgeInsets.only(
+                                                    padding: EdgeInsets.only(
                                                         top: 8.0, left: 5),
                                                     child: Text(
                                                       'Sylhet',
                                                       style: TextStyle(
                                                           fontSize: 20,
                                                           fontWeight:
-                                                          FontWeight.bold),
+                                                              FontWeight.bold),
                                                     ),
                                                   ),
-                                                  SizedBox(height: 10,),
+                                                  SizedBox(
+                                                    height: 10,
+                                                  ),
                                                   Padding(
-                                                    padding: const EdgeInsets.only(left: 5.0),
+                                                    padding:
+                                                        const EdgeInsets.only(
+                                                            left: 5.0),
                                                     child: Row(
                                                       children: [
                                                         Text('Bangladesh',
                                                             style: TextStyle(
-                                                              color: ColorSelect.subTitle,
+                                                              color: ColorSelect
+                                                                  .subTitle,
                                                               fontSize: 15,
                                                             )),
                                                         Spacer(),
                                                         Text('\$250',
                                                             style: TextStyle(
-                                                              color: ColorSelect.primary,
+                                                              color: ColorSelect
+                                                                  .primary,
                                                               fontSize: 25,
                                                             )),
                                                       ],
@@ -490,9 +667,9 @@ class _HomeState extends State<Home> {
                                   children: [
                                     Row(
                                       crossAxisAlignment:
-                                      CrossAxisAlignment.center,
+                                          CrossAxisAlignment.center,
                                       mainAxisAlignment:
-                                      MainAxisAlignment.center,
+                                          MainAxisAlignment.center,
                                       children: [
                                         //Japan Container
 
@@ -505,7 +682,7 @@ class _HomeState extends State<Home> {
                                             width: 165,
                                             decoration: BoxDecoration(
                                               borderRadius:
-                                              BorderRadius.circular(15),
+                                                  BorderRadius.circular(15),
                                               color: Colors.white,
                                               boxShadow: [
                                                 BoxShadow(
@@ -520,51 +697,110 @@ class _HomeState extends State<Home> {
                                             ),
                                             child: Padding(
                                               padding:
-                                              const EdgeInsets.all(8.0),
+                                                  const EdgeInsets.all(8.0),
                                               //image container
                                               child: Column(
                                                 crossAxisAlignment:
-                                                CrossAxisAlignment.start,
+                                                    CrossAxisAlignment.start,
                                                 children: [
-                                                  Container(
-                                                    height: 160,
-                                                    width: 150,
-                                                    decoration: BoxDecoration(
-                                                      borderRadius:
-                                                      BorderRadius.circular(15),
-                                                      image: DecorationImage(
-                                                        fit: BoxFit.cover,
-                                                        image: AssetImage(
-                                                            'assects/country/Argentina.jpg'),
+                                                  Stack(
+                                                    alignment:
+                                                        Alignment.topRight,
+                                                    children: [
+                                                      Container(
+                                                        height: 160,
+                                                        width: 150,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(15),
+                                                          image:
+                                                              DecorationImage(
+                                                            fit: BoxFit.cover,
+                                                            image: AssetImage(
+                                                                'assects/country/Argentina.jpg'),
+                                                          ),
+                                                        ),
                                                       ),
-                                                    ),
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                    .only(
+                                                                right: 8.0,
+                                                                top: 8.0),
+                                                        child: Positioned(
+                                                            child: Container(
+                                                          height: 30,
+                                                          width: 55,
+                                                          decoration: BoxDecoration(
+                                                              color: Color(
+                                                                      0xFFC0C7FF)
+                                                                  .withOpacity(
+                                                                      0.6),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          20)),
+                                                          child: Row(
+                                                            children: [
+                                                              Padding(
+                                                                padding:
+                                                                    const EdgeInsets
+                                                                            .all(
+                                                                        4.0),
+                                                                child: Icon(
+                                                                  Icons.star,
+                                                                  color: Colors
+                                                                      .white,
+                                                                ),
+                                                              ),
+                                                              Text(
+                                                                '4.5',
+                                                                style: TextStyle(
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .bold,
+                                                                    color: Colors
+                                                                        .white),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        )),
+                                                      ),
+                                                    ],
                                                   ),
                                                   Padding(
-                                                    padding:
-                                                    EdgeInsets.only(
+                                                    padding: EdgeInsets.only(
                                                         top: 8.0, left: 5),
                                                     child: Text(
                                                       'Argentina',
                                                       style: TextStyle(
                                                           fontSize: 20,
                                                           fontWeight:
-                                                          FontWeight.bold),
+                                                              FontWeight.bold),
                                                     ),
                                                   ),
-                                                  SizedBox(height: 10,),
+                                                  SizedBox(
+                                                    height: 10,
+                                                  ),
                                                   Padding(
-                                                    padding: const EdgeInsets.only(left: 5.0),
+                                                    padding:
+                                                        const EdgeInsets.only(
+                                                            left: 5.0),
                                                     child: Row(
                                                       children: [
                                                         Text('Argentina',
                                                             style: TextStyle(
-                                                              color: ColorSelect.subTitle,
+                                                              color: ColorSelect
+                                                                  .subTitle,
                                                               fontSize: 15,
                                                             )),
                                                         Spacer(),
                                                         Text('\$250',
                                                             style: TextStyle(
-                                                              color: ColorSelect.primary,
+                                                              color: ColorSelect
+                                                                  .primary,
                                                               fontSize: 25,
                                                             )),
                                                       ],
@@ -584,7 +820,7 @@ class _HomeState extends State<Home> {
                                             width: 165,
                                             decoration: BoxDecoration(
                                               borderRadius:
-                                              BorderRadius.circular(15),
+                                                  BorderRadius.circular(15),
                                               color: Colors.white,
                                               boxShadow: [
                                                 BoxShadow(
@@ -599,51 +835,110 @@ class _HomeState extends State<Home> {
                                             ),
                                             child: Padding(
                                               padding:
-                                              const EdgeInsets.all(8.0),
+                                                  const EdgeInsets.all(8.0),
                                               //image container
                                               child: Column(
                                                 crossAxisAlignment:
-                                                CrossAxisAlignment.start,
+                                                    CrossAxisAlignment.start,
                                                 children: [
-                                                  Container(
-                                                    height: 160,
-                                                    width: 150,
-                                                    decoration: BoxDecoration(
-                                                      borderRadius:
-                                                      BorderRadius.circular(15),
-                                                      image: DecorationImage(
-                                                        fit: BoxFit.cover,
-                                                        image: AssetImage(
-                                                            'assects/country/Russia.jpg'),
+                                                  Stack(
+                                                    alignment:
+                                                        Alignment.topRight,
+                                                    children: [
+                                                      Container(
+                                                        height: 160,
+                                                        width: 150,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(15),
+                                                          image:
+                                                              DecorationImage(
+                                                            fit: BoxFit.cover,
+                                                            image: AssetImage(
+                                                                'assects/country/India.jpg'),
+                                                          ),
+                                                        ),
                                                       ),
-                                                    ),
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                    .only(
+                                                                right: 8.0,
+                                                                top: 8.0),
+                                                        child: Positioned(
+                                                            child: Container(
+                                                          height: 30,
+                                                          width: 55,
+                                                          decoration: BoxDecoration(
+                                                              color: Color(
+                                                                      0xFFC0C7FF)
+                                                                  .withOpacity(
+                                                                      0.6),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          20)),
+                                                          child: Row(
+                                                            children: [
+                                                              Padding(
+                                                                padding:
+                                                                    const EdgeInsets
+                                                                            .all(
+                                                                        4.0),
+                                                                child: Icon(
+                                                                  Icons.star,
+                                                                  color: Colors
+                                                                      .white,
+                                                                ),
+                                                              ),
+                                                              Text(
+                                                                '4.5',
+                                                                style: TextStyle(
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .bold,
+                                                                    color: Colors
+                                                                        .white),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        )),
+                                                      ),
+                                                    ],
                                                   ),
                                                   Padding(
-                                                    padding:
-                                                    EdgeInsets.only(
+                                                    padding: EdgeInsets.only(
                                                         top: 8.0, left: 5),
                                                     child: Text(
                                                       'Parice',
                                                       style: TextStyle(
                                                           fontSize: 20,
                                                           fontWeight:
-                                                          FontWeight.bold),
+                                                              FontWeight.bold),
                                                     ),
                                                   ),
-                                                  SizedBox(height: 10,),
+                                                  SizedBox(
+                                                    height: 10,
+                                                  ),
                                                   Padding(
-                                                    padding: const EdgeInsets.only(left: 5.0),
+                                                    padding:
+                                                        const EdgeInsets.only(
+                                                            left: 5.0),
                                                     child: Row(
                                                       children: [
                                                         Text('Bangladesh',
                                                             style: TextStyle(
-                                                              color: ColorSelect.subTitle,
+                                                              color: ColorSelect
+                                                                  .subTitle,
                                                               fontSize: 15,
                                                             )),
                                                         Spacer(),
                                                         Text('\$300',
                                                             style: TextStyle(
-                                                              color: ColorSelect.primary,
+                                                              color: ColorSelect
+                                                                  .primary,
                                                               fontSize: 25,
                                                             )),
                                                       ],
@@ -663,7 +958,7 @@ class _HomeState extends State<Home> {
                                             width: 165,
                                             decoration: BoxDecoration(
                                               borderRadius:
-                                              BorderRadius.circular(15),
+                                                  BorderRadius.circular(15),
                                               color: Colors.white,
                                               boxShadow: [
                                                 BoxShadow(
@@ -678,52 +973,110 @@ class _HomeState extends State<Home> {
                                             ),
                                             child: Padding(
                                               padding:
-                                              const EdgeInsets.all(8.0),
+                                                  const EdgeInsets.all(8.0),
                                               //image container
                                               child: Column(
                                                 crossAxisAlignment:
-                                                CrossAxisAlignment.start,
+                                                    CrossAxisAlignment.start,
                                                 children: [
-                                                  Container(
-                                                    height: 160,
-                                                    width: 150,
-                                                    decoration: BoxDecoration(
-                                                      borderRadius:
-                                                      BorderRadius.circular(15),
-                                                      image: DecorationImage(
-                                                        fit: BoxFit.cover,
-                                                        image: AssetImage(
-                                                            'assects/country/Brazil.jpg'),
+                                                  Stack(
+                                                    alignment:
+                                                        Alignment.topRight,
+                                                    children: [
+                                                      Container(
+                                                        height: 160,
+                                                        width: 150,
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(15),
+                                                          image:
+                                                              DecorationImage(
+                                                            fit: BoxFit.cover,
+                                                            image: AssetImage(
+                                                                'assects/country/Brazil.jpg'),
+                                                          ),
+                                                        ),
                                                       ),
-                                                    ),
+                                                      Padding(
+                                                        padding:
+                                                            const EdgeInsets
+                                                                    .only(
+                                                                right: 8.0,
+                                                                top: 8.0),
+                                                        child: Positioned(
+                                                            child: Container(
+                                                          height: 30,
+                                                          width: 55,
+                                                          decoration: BoxDecoration(
+                                                              color: Color(
+                                                                      0xFFC0C7FF)
+                                                                  .withOpacity(
+                                                                      0.6),
+                                                              borderRadius:
+                                                                  BorderRadius
+                                                                      .circular(
+                                                                          20)),
+                                                          child: Row(
+                                                            children: [
+                                                              Padding(
+                                                                padding:
+                                                                    const EdgeInsets
+                                                                            .all(
+                                                                        4.0),
+                                                                child: Icon(
+                                                                  Icons.star,
+                                                                  color: Colors
+                                                                      .white,
+                                                                ),
+                                                              ),
+                                                              Text(
+                                                                '4.5',
+                                                                style: TextStyle(
+                                                                    fontWeight:
+                                                                        FontWeight
+                                                                            .bold,
+                                                                    color: Colors
+                                                                        .white),
+                                                              ),
+                                                            ],
+                                                          ),
+                                                        )),
+                                                      ),
+                                                    ],
                                                   ),
                                                   Padding(
-                                                    padding:
-                                                    EdgeInsets.only(
+                                                    padding: EdgeInsets.only(
                                                         top: 8.0, left: 5),
                                                     child: Text(
                                                       'Brazil',
                                                       style: TextStyle(
                                                           fontSize: 20,
                                                           fontWeight:
-                                                          FontWeight.bold),
+                                                              FontWeight.bold),
                                                     ),
                                                   ),
-                                                  SizedBox(height: 10,),
+                                                  SizedBox(
+                                                    height: 10,
+                                                  ),
                                                   Padding(
-
-                                                    padding: const EdgeInsets.only(left: 5.0),
+                                                    padding:
+                                                        const EdgeInsets.only(
+                                                            left: 5.0),
                                                     child: Row(
                                                       children: [
                                                         Text('Brazil',
                                                             style: TextStyle(
-                                                              color: ColorSelect.subTitle,
+                                                              color: ColorSelect
+                                                                  .subTitle,
                                                               fontSize: 15,
                                                             )),
                                                         Spacer(),
                                                         Text('\$550',
                                                             style: TextStyle(
-                                                              color: ColorSelect.primary,
+                                                              color: ColorSelect
+                                                                  .primary,
                                                               fontSize: 25,
                                                             )),
                                                       ],
