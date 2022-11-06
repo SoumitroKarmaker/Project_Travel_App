@@ -10,6 +10,8 @@ class Chittagong extends StatefulWidget {
 }
 
 class _ChittagongState extends State<Chittagong> {
+  List<String> name = ['About', 'Benefit', 'Highlights'];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -153,27 +155,47 @@ class _ChittagongState extends State<Chittagong> {
                 Row(
                   children: [
                     Icon(IconlyLight.location),
-                    SizedBox(width: 10,),
+                    SizedBox(
+                      width: 10,
+                    ),
                     Text(
                       'Bangladesh',
-                      style: TextStyle(fontSize: 15, color: ColorSelect.subTitle),
+                      style:
+                          TextStyle(fontSize: 15, color: ColorSelect.subTitle),
                     ),
                   ],
                 ),
                 Row(
                   children: [
-                    Icon(IconlyBold.star, color: ColorSelect.primary,),
-                    SizedBox(width: 10,),
+                    Icon(
+                      IconlyBold.star,
+                      color: ColorSelect.primary,
+                    ),
+                    SizedBox(
+                      width: 10,
+                    ),
                     Text(
                       '4.5 (2.220)',
-                      style: TextStyle(fontSize: 15, color: ColorSelect.subTitle),
+                      style:
+                          TextStyle(fontSize: 15, color: ColorSelect.subTitle),
                     ),
                   ],
                 ),
               ],
             ),
           ),
-
+          Container(
+            height: 60,
+            child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: name.length,
+                itemBuilder: (context, index) {
+                  return Container(
+                    color: Colors.yellow,
+                    child: Text(name[index]),
+                  );
+                }),
+          ),
         ],
       ),
     );
