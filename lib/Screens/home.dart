@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:travel/const.dart';
 
+import 'Upcomming/Chittagong.dart';
+
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -239,145 +241,149 @@ class _HomeState extends State<Home> {
                                           MainAxisAlignment.center,
                                       children: [
                                         //Japan Container
-
                                         Padding(
-                                          padding: const EdgeInsets.only(
-                                              left: 20,
-                                              top: 10.0,
-                                              bottom: 10.0),
-                                          child: Container(
-                                            width: 165,
-                                            decoration: BoxDecoration(
-                                              borderRadius:
+                                            padding: const EdgeInsets.only(
+                                                left: 20,
+                                                top: 10.0,
+                                                bottom: 10.0),
+                                            child: GestureDetector(
+                                              onTap: (){
+                                                Navigator.push(context, MaterialPageRoute(builder: (context) => Chittagong()));
+                                              },
+                                              child: Container(
+                                                width: 165,
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
                                                   BorderRadius.circular(15),
-                                              color: Colors.white,
-                                              boxShadow: [
-                                                BoxShadow(
-                                                  color: Colors.grey
-                                                      .withOpacity(0.5),
-                                                  spreadRadius: 1,
-                                                  blurRadius: 9,
-                                                  offset: Offset(0,
-                                                      4), // changes position of shadow
+                                                  color: Colors.white,
+                                                  boxShadow: [
+                                                    BoxShadow(
+                                                      color: Colors.grey
+                                                          .withOpacity(0.5),
+                                                      spreadRadius: 1,
+                                                      blurRadius: 9,
+                                                      offset: Offset(0,
+                                                          4), // changes position of shadow
+                                                    ),
+                                                  ],
                                                 ),
-                                              ],
-                                            ),
-                                            child: Padding(
-                                              padding:
+                                                child: Padding(
+                                                  padding:
                                                   const EdgeInsets.all(8.0),
-                                              //image container
-                                              child: Column(
-                                                crossAxisAlignment:
+                                                  //image container
+                                                  child: Column(
+                                                    crossAxisAlignment:
                                                     CrossAxisAlignment.start,
-                                                children: [
-                                                  Stack(
-                                                    alignment:
-                                                        Alignment.topRight,
                                                     children: [
-                                                      Container(
-                                                        height: 160,
-                                                        width: 150,
-                                                        decoration:
+                                                      Stack(
+                                                        alignment:
+                                                        Alignment.topRight,
+                                                        children: [
+                                                          Container(
+                                                            height: 160,
+                                                            width: 150,
+                                                            decoration:
                                                             BoxDecoration(
-                                                          borderRadius:
+                                                              borderRadius:
                                                               BorderRadius
                                                                   .circular(15),
-                                                          image:
+                                                              image:
                                                               DecorationImage(
-                                                            fit: BoxFit.cover,
-                                                            image: AssetImage(
-                                                                'assects/country/Chittagong.jpg'),
+                                                                fit: BoxFit.cover,
+                                                                image: AssetImage(
+                                                                    'assects/country/Chittagong.jpg'),
+                                                              ),
+                                                            ),
                                                           ),
+                                                          Padding(
+                                                            padding:
+                                                            const EdgeInsets
+                                                                .only(
+                                                                right: 8.0,
+                                                                top: 8.0),
+                                                            child: Positioned(
+                                                                child: Container(
+                                                                  height: 30,
+                                                                  width: 55,
+                                                                  decoration: BoxDecoration(
+                                                                      color: Color(
+                                                                          0xFFC0C7FF)
+                                                                          .withOpacity(
+                                                                          0.6),
+                                                                      borderRadius:
+                                                                      BorderRadius
+                                                                          .circular(
+                                                                          20)),
+                                                                  child: Row(
+                                                                    children: [
+                                                                      Padding(
+                                                                        padding:
+                                                                        const EdgeInsets
+                                                                            .all(
+                                                                            4.0),
+                                                                        child: Icon(
+                                                                          Icons.star,
+                                                                          color: Colors
+                                                                              .white,
+                                                                        ),
+                                                                      ),
+                                                                      Text(
+                                                                        '4.5',
+                                                                        style: TextStyle(
+                                                                            fontWeight:
+                                                                            FontWeight
+                                                                                .bold,
+                                                                            color: Colors
+                                                                                .white),
+                                                                      ),
+                                                                    ],
+                                                                  ),
+                                                                )),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                      Padding(
+                                                        padding: EdgeInsets.only(
+                                                            top: 8.0, left: 5),
+                                                        child: Text(
+                                                          'Chittagong',
+                                                          style: TextStyle(
+                                                              fontSize: 20,
+                                                              fontWeight:
+                                                              FontWeight.bold),
                                                         ),
+                                                      ),
+                                                      SizedBox(
+                                                        height: 10,
                                                       ),
                                                       Padding(
                                                         padding:
-                                                            const EdgeInsets
-                                                                    .only(
-                                                                right: 8.0,
-                                                                top: 8.0),
-                                                        child: Positioned(
-                                                            child: Container(
-                                                          height: 30,
-                                                          width: 55,
-                                                          decoration: BoxDecoration(
-                                                              color: Color(
-                                                                      0xFFC0C7FF)
-                                                                  .withOpacity(
-                                                                      0.6),
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .circular(
-                                                                          20)),
-                                                          child: Row(
-                                                            children: [
-                                                              Padding(
-                                                                padding:
-                                                                    const EdgeInsets
-                                                                            .all(
-                                                                        4.0),
-                                                                child: Icon(
-                                                                  Icons.star,
-                                                                  color: Colors
-                                                                      .white,
-                                                                ),
-                                                              ),
-                                                              Text(
-                                                                '4.5',
+                                                        const EdgeInsets.only(
+                                                            left: 5.0),
+                                                        child: Row(
+                                                          children: [
+                                                            Text('Bangladesh',
                                                                 style: TextStyle(
-                                                                    fontWeight:
-                                                                        FontWeight
-                                                                            .bold,
-                                                                    color: Colors
-                                                                        .white),
-                                                              ),
-                                                            ],
-                                                          ),
-                                                        )),
+                                                                  color: ColorSelect
+                                                                      .subTitle,
+                                                                  fontSize: 15,
+                                                                )),
+                                                            Spacer(),
+                                                            Text('\$250',
+                                                                style: TextStyle(
+                                                                  color: ColorSelect
+                                                                      .primary,
+                                                                  fontSize: 25,
+                                                                )),
+                                                          ],
+                                                        ),
                                                       ),
                                                     ],
                                                   ),
-                                                  Padding(
-                                                    padding: EdgeInsets.only(
-                                                        top: 8.0, left: 5),
-                                                    child: Text(
-                                                      'Chittagong',
-                                                      style: TextStyle(
-                                                          fontSize: 20,
-                                                          fontWeight:
-                                                              FontWeight.bold),
-                                                    ),
-                                                  ),
-                                                  SizedBox(
-                                                    height: 10,
-                                                  ),
-                                                  Padding(
-                                                    padding:
-                                                        const EdgeInsets.only(
-                                                            left: 5.0),
-                                                    child: Row(
-                                                      children: [
-                                                        Text('Bangladesh',
-                                                            style: TextStyle(
-                                                              color: ColorSelect
-                                                                  .subTitle,
-                                                              fontSize: 15,
-                                                            )),
-                                                        Spacer(),
-                                                        Text('\$250',
-                                                            style: TextStyle(
-                                                              color: ColorSelect
-                                                                  .primary,
-                                                              fontSize: 25,
-                                                            )),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ],
+                                                ),
                                               ),
                                             ),
                                           ),
-                                        ),
                                         Padding(
                                           padding: const EdgeInsets.only(
                                               left: 20,
@@ -880,7 +886,7 @@ class _HomeState extends State<Home> {
                                                                   BorderRadius
                                                                       .circular(
                                                                           20)),
-                                                          child: Row(
+                                                            child: Row(
                                                             children: [
                                                               Padding(
                                                                 padding:
