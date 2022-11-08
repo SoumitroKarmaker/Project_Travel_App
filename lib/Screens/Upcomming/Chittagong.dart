@@ -15,6 +15,7 @@ class _ChittagongState extends State<Chittagong> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFF6F7F7),
       extendBodyBehindAppBar: true,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
@@ -184,20 +185,58 @@ class _ChittagongState extends State<Chittagong> {
               ],
             ),
           ),
-          Container(
-            height: 60,
-            child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: name.length,
-                itemBuilder: (context, index) {
-                  return Container(
-                    color: Colors.yellow,
-                    child: Text(name[index]),
-                  );
-                }),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 18.0),
+            child: Container(
+              height: 65,
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: name.length,
+                  itemBuilder: (context, index) {
+                    return Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10),
+                          color: ColorSelect.primary,
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.only(left:21.0, right: 21, top: 14.0, bottom: 14.0),
+                          child: Center(
+                              child: Text(
+                            name[index],
+                            style: TextStyle(fontSize: 17, color: Colors.white),
+                          )),
+                        ),
+                      ),
+                    );
+                  }),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 20.0,right: 20),
+            child: Text(
+              'Fujinomiya (富士宮市 Fujinomiya-shi) '
+              'adalah kota yang terletak di Prefektur Shizuoka,'
+              ' Jepang. Pada 1 Februari 2020, kota ini memiliki p'
+              'erkiraan populasi 128,342 dan kepadatan penduduk 330 o'
+              'rang per km². Total wilayah kota adalah 389.08 km².',
+              style: TextStyle(color: ColorSelect.subTitle),
+            ),
           ),
         ],
       ),
+    //          //       Row(
+      //           //         children: [
+      //           //           Column(
+      //           //             children: [
+      //           //               Text('Your Trip Count',style: TextStyle(color: ColorSelect.subTitle),),
+      //           //               Text('\$250',style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),)
+      //           //             ],
+      //           //           ),
+      //           //         ],
+      //           //       )
     );
+
   }
 }
